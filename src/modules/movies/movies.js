@@ -84,7 +84,7 @@ module.exports = {
                     if (req.file == undefined) {
                         console.log("bosh files")
                     } else {                       
-                        let img = "http://localhost:8000/" + `images/${req.file.filename}`
+                        let img = "https://porject-admin.herokuapp.com/users/" + `images/${req.file.filename}`
                         res.send(img)
                     }
                 }
